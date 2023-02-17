@@ -33,7 +33,7 @@ This script solves the issue, but it is rather inconvenient to run it every time
 
 ![Action tab](imgs/task_scheduler_action_tab.png)
 
-❗ Be sure to insert the full path to the file in {{full_path_to_script}} (without the double braces).
+❗ Be sure to insert the full path to the file including the filename with extension in {{full_path_to_script}} (without the double braces). For example: `-WindowStyle Hidden -File "C:\Users\Victor\Scripts\prevent_screen_saver.ps1"`.
 
 ❗ You can also provide simply `powershell` to `Program/script` if the binary is in your PATH. If for some reason an error occurs with the regular method, try this.
 
@@ -45,7 +45,7 @@ The next time you log on to your user, the script should run automatically in th
 
 ## Check if the script is running
 
-Open the Task Manager and going into the `Details` tab. There, you should find a Powershell process running.
+Open the Task Manager and go into the `Details` tab. There, you should find a Powershell process running.
 
 There will probably more than one Powershell task running, so to find the correct one, add the `Command line` column by right clicking the header and choosing `Select columns`. Then, you should see something like `C:Windows\System32\WindowsPowerShell\v1.0\powershell.exe -WindowStyle Hidden -File "{{full_path_to_script}}"`. That is our process.
 
