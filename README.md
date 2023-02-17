@@ -1,8 +1,12 @@
 # prevent-screen-saver-windows
 
-This project contains a script for keeping Windows awake and instructions on how to schedule this task to always run in the background.
+This project contains a script for keeping Windows awake and instructions on how to schedule this task to run automatically in the background.
 
-## How?
+## Why not simply use Windows power settings?
+
+If your notebook is managed by a company or someone else, these settings might not be changeable. Even if they are, there can be settings in place that override that behaviour, causing the screen saver to pop up anyway. This is very annoying, because if that happens, you have to log in again by typing your password.
+
+## How it works?
 
 The idea is to send a keypress every X amount of time so that Windows thinks there is always activity from the user. That way, the computer never turns off the screen or go into the screen saver.
 
